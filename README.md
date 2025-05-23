@@ -14,8 +14,9 @@ A Windows Forms application for securely managing key-value pairs with password 
 
 ## Requirements
 
-- .NET 7.0 or later
+- .NET 8.0 SDK or later
 - Windows operating system
+- Visual Studio 2022 or later (recommended)
 
 ## Setup
 
@@ -56,6 +57,12 @@ dotnet run
 - Encrypted value storage using Windows Data Protection API
 - Automatic clipboard clearing
 - Reset key functionality for password recovery
+
+## Development
+
+- Built with .NET 8.0
+- Uses Microsoft.Data.Sqlite for database operations
+- Implements Windows Forms for the user interface
 
 ## License
 
