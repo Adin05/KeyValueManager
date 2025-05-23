@@ -1,0 +1,9 @@
+I need app to manage Key Value.
+
+The requirenet is
+    - make the simple crud operation
+    - save into sqlite
+    - have Key, Value 1, value 2, value 3, descripttion
+    - ecript the value before save to db
+    - set a password at first use the app & and generate key for reset password
+    - make i can copy the value and clear the clipboard in one minute automaticaly
