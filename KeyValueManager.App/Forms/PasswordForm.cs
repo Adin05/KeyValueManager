@@ -128,6 +128,7 @@ namespace KeyValueManager.App.Forms
             this.Name = "PasswordForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Login";
+            this.AcceptButton = this.btnLogin;
             this.ResumeLayout(false);
             this.PerformLayout();
         }

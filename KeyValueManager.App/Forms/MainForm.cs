@@ -200,6 +200,7 @@ namespace KeyValueManager.App.Forms
             this.Controls.Add(this.dataGridView);
             this.Name = "MainForm";
             this.Text = "Key Value Manager";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);
         }
