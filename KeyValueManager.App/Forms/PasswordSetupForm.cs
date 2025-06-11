@@ -27,7 +27,7 @@ namespace KeyValueManager.App.Forms
             _isFirstRun = isFirstRun;
 
             // Form settings
-            this.Text = isFirstRun ? "Set Password" : "Reset Password";
+            this.Text = isFirstRun ? "Key Value Manager - Set Password" : "Key Value Manager - Reset Password";
             this.Size = new System.Drawing.Size(400, isFirstRun ? 250 : 350);
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
@@ -201,7 +201,7 @@ namespace KeyValueManager.App.Forms
                 // Create a custom form for displaying the reset key
                 using (var resetKeyForm = new Form())
                 {
-                    resetKeyForm.Text = "Save Reset Key";
+                    resetKeyForm.Text = "Key Value Manager - Save Reset Key";
                     resetKeyForm.Size = new System.Drawing.Size(400, 200);
                     resetKeyForm.FormBorderStyle = FormBorderStyle.FixedDialog;
                     resetKeyForm.MaximizeBox = false;

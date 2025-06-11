@@ -64,6 +64,35 @@ dotnet run
 - Uses Microsoft.Data.Sqlite for database operations
 - Implements Windows Forms for the user interface
 
+## Creating a Portable Release
+
+To create a portable version of the application that can run on any Windows machine without requiring .NET installation:
+
+### Using Visual Studio:
+1. Right-click on the project in Solution Explorer
+2. Select "Publish"
+3. Click "New" to create a new publish profile
+4. Select "Folder" as the target
+5. Click "Browse" and select your output folder
+6. Click "Finish"
+7. Click "Publish"
+
+### Using Command Line:
+```bash
+dotnet publish -c Release -r win-x64 --self-contained true /p:PublishSingleFile=true /p:IncludeAllContentForSelfExtract=true /p:AssemblyName="Key Value Manager"
+```
+
+The portable version will be created as a single executable file named "Key Value Manager.exe" in the publish folder. This executable:
+- Contains all necessary dependencies
+- Can run on any Windows machine without .NET installation
+- Includes the SQLite database
+- Maintains all security features
+
+### Distribution:
+1. Copy the generated "Key Value Manager.exe" to any location
+2. Run the executable directly - no installation required
+3. The application will create its database in the same directory as the executable
+
 ## License
 
 [Your chosen license] 

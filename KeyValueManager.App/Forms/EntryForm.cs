@@ -184,7 +184,7 @@ namespace KeyValueManager.App.Forms
             this.MinimizeBox = false;
             this.Name = "EntryForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Entry";
+            this.Text = "Key Value Entry";
             this.ResumeLayout(false);
             this.PerformLayout();
         }
